@@ -15,7 +15,8 @@ typedef struct
 {
     char categoryId[10];
     char categoryName[10];
-    Product product;
+    Product product[100];
+    int numProducts;
 }Category;
 typedef struct 
 {
@@ -24,3 +25,8 @@ typedef struct
     Date date;
     Product product;
 }Order;
+typedef struct 
+{
+    char namelogIn[10];
+    char pass[10];
+}Accounts;
